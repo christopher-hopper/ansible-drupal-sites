@@ -1,0 +1,42 @@
+---
+dependencies: []
+
+galaxy_info:
+  author: christopher-hopper
+  description: Drupal sites files path manager
+  license: "license (GPL)"
+  min_ansible_version: 1.9
+  platforms:
+    - name: GenericUNIX
+      versions:
+      - all
+    - name: GenericLinux
+      versions:
+      - all
+    - name: EL
+      versions:
+      - all
+    - name: Debian
+      versions:
+      - all
+    - name: Ubuntu
+      versions:
+      - all
+    - name: Fedora
+      versions:
+      - all
+    - name: opensuse
+      versions:
+      - all
+    - name: GenericBSD
+      versions:
+      - all
+    - name: FreeBSD
+      versions:
+      - all
+  galaxy_tags:
+    - development
+    - drupal
+    - cms
+    - web
+    - php
