@@ -1,0 +1,11 @@
+---
+# Drupal root folder path.
+drupal_root_path: "/var/www"
+
+# Drupal sites and paths.
+drupal_sites:
+  - name: "default"
+    files_paths:
+      - "files"
+      - "files-private"
+      - "files-temporary"

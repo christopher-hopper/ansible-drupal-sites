@@ -1,0 +1,22 @@
+---
+- name: Drupal sites directory.
+  file:
+    path: "{{ drupal_root_path }}/sites/{{ drupal_sites_item.name }}"
+    state: directory
+    mode: "ug+w"
+  with_items: "{{ drupal_sites }}"
+  loop_control:
+    loop_var: drupal_sites_item
+  become: yes
+
+- name: Drupal sites directory paths.
+  file:
+    path: "{{ drupal_root_path }}/sites/{{ drupal_files_path.0.name }}/{{ drupal_files_path.1 }}"
+    state: directory
+    mode: "a+w"
+  with_subelements:
+    - drupal_sites
+    - files_paths
+  loop_control:
+    loop_var: drupal_files_path
+  become: yes
